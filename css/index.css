@@ -1,0 +1,1274 @@
+
+@keyframes outcircle {
+    0%{
+        transform-origin: 50% 50%;
+        transform: rotate(0deg);
+    }
+    100%{
+        transform-origin: 50% 50%;
+        transform: rotate(360deg);
+    }
+}
+
+
+body {
+font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+.swiper-container {
+width: 100%;
+height: 100vh;
+}
+.swiper-slide {
+height: 100vh;
+/* Center slide text vertically */
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+background-color: #fff;
+width: 100%;
+height: 100%;
+}
+/* 第一页开始 */
+.box{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #030303;
+    margin-top: 0.8rem;
+    z-index: -1;
+}
+.swiper-slide-active>.box{
+    display: block;
+}
+.bg{
+    width: 6.4rem;
+    /* height: 7.33rem; */
+    background-size: 100%;
+    animation: slideInRight .5s linear;
+    position: absolute;
+    top:0.7rem;
+}
+.circle{
+    position: absolute;
+    width: 2.65rem;;
+    height: 2.65rem;
+    top: 0.85rem;
+    left: 50%;
+    margin-left: -1.37rem;
+    /* animation: outcircle 1s 1.5s ease-out; */
+    animation-iteration-count:3,5;
+    animation-name: outcircle,flash;
+    animation-duration: 1s,1s;
+    animation-delay: 2s,5s;
+    animation-timing-function: ease-out,linear;
+}
+.logo-1{
+    position: absolute;
+    width: 2.09rem;
+    height: 1.57rem;
+    top: 1.35rem;
+    left:50%;
+    margin-left: -1.04rem;
+    /* animation: flash 1s 1s linear; */
+    animation-name: fadeIn,flash;
+    animation-duration: 1s,1s;
+    animation-delay: 0s,1s;
+    animation-timing-function: linear,linear;
+}
+.red{
+    position: absolute;
+    width: 0.22rem;
+    height: 0.43rem;
+    top: 3.75rem;
+    left: 1.52rem;
+}
+.jiangxin{
+    width: 2.43rem;
+    height: 0.4rem;
+    position: absolute;
+    top: 3.75rem;
+    left: 50%;
+    margin-left: -1.26rem;
+}
+.shouzuo{
+    width: 1.58rem;
+    height: 0.18rem;
+    position: absolute;
+    top: 4.2rem;
+    left: 50%;
+    margin-left: -0.76rem;
+}
+.down-1{
+    width: 6.4rem;
+    height: 1.35rem;
+    position: absolute;
+    bottom: 0.3rem;
+    z-index: 0;
+}
+.bot-1{
+    width: 6.87rem;
+    height: 5.85rem;
+    position: absolute;
+    bottom: 0.65rem;
+    left: 0.15rem;
+    z-index: 5;
+    /* animation: fadeInUp .5s 2s linear; */
+}
+/* 第一页结束 */
+/* 第二页开始 */
+.top-2-1{
+    position: absolute;
+    width: 9rem;
+    height: 0.75rem;
+    animation: fadeInLeft 1s linear;
+    top: 0.5rem;
+    left: 0;
+}
+.top-2-2{
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    width: 9rem;
+    height: 0.97rem;
+}
+.xunzhao{
+    width: 0.51rem;
+    height: 3.51rem;
+    position: absolute;
+    left: 0.6rem;
+    top: 1.65rem;
+}
+.word2-2{
+    width: 0.96rem; 
+    height: 3.13rem;
+    position: absolute;
+    top: 1.65rem;
+    left: 1.25rem;
+    animation: fadeInDownBig 1s ease-out forwards;
+}
+.pan{
+    width: 0.46em;
+    height: 3.87rem;
+    position: absolute;
+    left: 2.45rem;
+    top: 1.65rem;
+}
+.word4-2{
+    width: 0.35rem;
+    height: 1.17rem;
+    position: absolute;
+    top: 1.65rem;
+    left: 3.1rem;
+    z-index: 4;
+    opacity: 0;
+    animation: fadeInDownBig 2s 1s ease-out forwards;
+}
+.song{
+    position: absolute;
+    width: 0.22rem;
+    height: 0.21rem;
+    top: 2.5rem;
+    left: 3.25rem;
+    animation: flash 1s 1s linear;
+    animation-iteration-count:6;
+}
+.tea-2{
+    position: absolute;
+    width: 2.86em;
+    height: 4.04em;
+    left: 50%;
+    margin-left: -1.43rem;
+    top: 2.5rem;
+    opacity: 0;
+    animation-name: flipInX,flash;
+    animation-duration: 2s,1s;
+    animation-delay: 1s,3s;
+    animation-timing-function: ease-in,linear;
+    animation-iteration-count:1,4;
+    animation-fill-mode:forwards;
+}
+.songchuan-2{
+    width: 1.39em;
+    height: 1.49em;
+    position: absolute;
+    right: 0.9rem;
+    top: 1.65rem;
+    z-index: 4;
+    opacity: 0;
+    animation-name: fadeInUp,tada;
+    animation-duration: 0.5s,1s;
+    animation-delay: 3s,4s;
+    animation-timing-function: ease-in,linear;
+    animation-iteration-count:1,5;
+    animation-fill-mode:forwards;
+}
+.shaiword-2{
+    width: 1.09em;
+    height: 1.97em;
+    position: absolute;
+    top: 3.2rem;
+    right: 1.1rem;
+    z-index: 4;
+}
+@keyframes zoomInn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(1.8, 1.8, 1.8);
+      transform: scale3d(1.8, 1.8, 1.8);
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+.bg-2{
+    position: absolute;
+    width: 6.66rem;
+    height: 7.14em;
+    z-index: -1;
+    bottom: 1rem;
+    opacity: 0;
+    animation: zoomInn 1s 5s ease-in forwards;
+    left: 50%;
+    margin-left: -3.33rem;
+}
+.down5-2{
+    width: 2.79rem;
+    height: 0.23em;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.34rem;
+    bottom: 2.28rem;
+}
+.down3-2{
+    width: 5.7rem;
+    height: 1.21em;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    margin-left: -2.85rem;
+}
+@keyframes rotateInn {
+    from {
+      -webkit-transform-origin: center;
+      transform-origin: center;
+      -webkit-transform: rotate3d(0, 0, 1, 180deg);
+      transform: rotate3d(0, 0, 1, 180deg);
+    }
+  
+    to {
+      -webkit-transform-origin: center;
+      transform-origin: center;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+.down1-2{
+    width: 1.87em;
+    height: 0.43em;
+    position: absolute;
+    bottom: 2.1rem;
+    left: 0.7rem;
+    opacity: 0;
+    animation-name: fadeIn,rotateInn;
+    animation-duration: 1s,1s;
+    animation-delay: 6s,7s;
+    animation-timing-function: linear,ease;
+    animation-iteration-count:1,3;
+    animation-fill-mode:forwards,forwards;
+}
+.down2-2{
+    width: 3.01rem;
+    height: 0.2em;
+    position: absolute;
+    right: 0.53rem;
+    bottom: 2.2rem;
+}
+.down4-2{
+    width: 5.23em;
+    height: 0.26em;
+    position: absolute;
+    bottom: 1.65rem;
+    left: 50%;
+    margin-left: -2.61rem;
+}
+/* 第二页结束 */
+/* 第三页开始 */
+.bgimg-3{
+    width: 7.5em;
+    height: 11rem;
+    background-size: 100%;
+}
+.bgimg-31{
+    position: absolute;
+    top: 0;
+    width: 7.5em;
+    height: 11rem;
+    background-size: 100%;
+    z-index: 0;
+    opacity: 0;
+    animation-name: zoomInn,fadeOutRight;
+    animation-duration: 1s,0.5s;
+    animation-delay: 5s,6s;
+    animation-timing-function: linear,linear;
+    animation-fill-mode:forwards,forwards;
+}
+.bg-3{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 6;
+    top: 0.2rem;
+}
+.pinpai-3{
+    width: 1.91em;
+    height: 0.39rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 0.2rem;
+    z-index: 1;
+}
+.wordbg-3{
+    width: 6.4em;
+    height: 8rem;
+    position: absolute;
+    top: 1.5rem;
+    z-index: 0;
+}
+.song-3{
+    width: 5.52em;
+    height: 0.61em;
+    position: absolute;
+    top: 2.65rem;
+    left: 0.35rem;
+    z-index: 1;
+}
+.word1-3{
+    width: 2.14em;
+    height: 0.23em;
+    position: absolute;
+    top: 3.05rem;
+    left: 0.2rem;
+    z-index: 1;
+}
+.word2-3{
+    width: 5.8rem;
+    height: 5.66em;
+    position: absolute;
+    z-index: 5;
+    top: 3.55rem;
+    left: 50%;
+    opacity: 0;
+    margin-left: -2.9rem;
+    animation-name: fadeIn,zoomInn;
+    animation-duration: 1s,1s;
+    animation-delay: 2s,3s;
+    animation-timing-function: linear,linear;
+    animation-fill-mode:forwards,forwards;
+}
+/* 第三页结束 */
+/* 第四页同第三页 */
+/* 第五页开始 */
+.swiper-slide1{
+    background-color: #f3f5f4;
+}
+@keyframes zoomIn2 {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.7, 0.3);
+      transform: scale3d(0.3, 0.3, 0.7);
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+.bg-5{
+    width: 7.06rem;
+    height: 10rem;
+    position: absolute;
+    z-index: -1;
+    left: -0.55rem;
+    opacity: 0;
+    animation: zoomIn2 1s linear forwards;
+}
+.box1{
+    background-color: #f3f5f4;
+    margin-top: 1.6rem;
+}
+.top-5{
+    width: 3.2rem;
+    height: 1.76rem;
+    position: absolute;
+    top: -0.92rem;
+    left: 0.15rem;
+    z-index: 2;
+}
+.top2-5{
+    width: 1.55em;
+    height: 2.1em;
+    position: absolute;
+    top: -0.4rem;
+    left: -0.3rem;
+    z-index: 1;
+}
+.topword-5{
+    width: 3.66em;
+    height: 1.05em;
+    position: absolute;
+    top: 1.18rem;
+    left: 0.45rem;
+    z-index: 2;
+}
+.left-5{
+    width: 5.4rem;
+    height: 5.64rem;
+    position: absolute;
+    transform-origin: 50% 50%;
+    transform: rotate(7deg);
+    left: -1.3rem;
+    top:-0.1rem;
+    z-index: 0;
+}
+.rightbg-5{
+    width: 1.8em;
+    height: 5.08em;
+    position: absolute;
+    right: 0.1rem;
+    top: 0.73rem;
+}
+.rightword-5{
+    width: 1.55em;
+    height: 3.5rem;
+    position: absolute;
+    top: 1.55rem;
+    right: 0.12rem;
+    background-size: 100%;
+}
+@keyframes pulse1 {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  
+    10% {
+      -webkit-transform: scale3d(1.2, 1.2, 1.2);
+      transform: scale3d(1.2, 1.2, 1.2);
+    }
+    20% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    50% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    70% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  }
+.img-5{
+    width: 5.64em;
+    height: 7.67em;
+    position: absolute;
+    bottom:1.35rem;
+    left: 0.05rem;
+    opacity: 0;
+    animation: pulse1 1s 2s linear forwards;
+}
+.slash-5{
+    width: 0.88rem;
+    height: 1rem;;
+    position: absolute;
+    right: 1.37rem;
+    top: 0.58rem;
+}
+.slash2{
+    top: 2.5rem;
+}
+.slash3-5{
+    width: 0.82rem;
+    height: 0.95rem;
+    position: absolute;
+    right: -0.41rem;
+    top: 2.8rem;
+}
+.slash3{
+    top: 4.55rem;
+}
+.rightdown{
+    width: 1.84rem;
+    height: 1.92em;
+    position: absolute;
+    right: -1.12rem;
+    bottom: 2.2rem;
+}
+.rightdown2{
+    width: 1.69rem;
+    height: 1.78em;
+    position: absolute;
+    right: -0.58rem;
+    bottom: 0.95rem;
+}
+.tea-5{
+    width: 0.89rem;
+    height: 0.89em;
+    position: absolute;
+    bottom: 2.32rem;
+    right: 1.9rem;
+    animation: flash 1s 3.5s linear infinite;
+}
+/* 第五页结束 */
+/* 第六页开始 */
+.box2{
+    height: 88%;
+    margin-top: -0.45rem;
+}
+.bg-6{
+    width: 7.1rem;
+    height: 100vh;
+    background-image: url('../images/Fji7dmh_2ipK8t5vzSOKKlflHi7c.png');
+    /* background-size: contain; */
+    opacity: 0.1;
+}
+.white-6{
+    width: 100%;
+    height: 2rem;
+    position: absolute;
+    top: 0.2rem;
+}
+.songcha-6{
+    width: 1.06em;
+    height: 1.14em;
+    position: absolute;
+    top: 0.9rem;
+    left: 0.35rem;
+}
+.topword-6{
+    width: 3.36em;
+    height: 0.93em;
+    position: absolute;
+    top:0.95rem;
+    left: 50%;
+    margin-left: -1.62rem;
+}
+.mei1-6{
+    width: 2.68em;
+    height: 1.88em;
+    position: absolute;
+    top:-0.5rem;
+    right: -0.9rem;
+    animation: flash 1s 3.5s linear;
+    animation-iteration-count:5;
+}
+.midword1-6{
+    width: 4.1em;
+    height: 0.41em;
+    position: absolute;
+    top: 2.65rem;
+    left: 0.35rem;
+}
+.midword2-6{
+    width: 2.79em;
+    height: 0.68em;
+    position: absolute;
+    top: 3.3rem;
+    left: 0.55rem;
+    animation: flash 1s 1s linear;
+    animation-iteration-count:3;
+}
+.midword3-6{
+    width: 3.7em;
+    height: 0.55em;
+    position: absolute;
+    top: 4.25rem;
+    left: 0.35rem;
+}
+.midImg-6{
+    width: 3.58em;
+    height: 2.78em;
+    position: absolute;
+    top:1.3rem;
+    right: -1.4rem;
+    animation: swing 1s 4.5s linear;
+    animation-iteration-count:5;
+}
+.downImg-6{
+    width: 7.1em;
+    height: 4.48em;
+    position: absolute;
+    bottom: 0.2rem;
+    left: -0.7rem;
+    opacity: 0;
+}
+.downImgsecond-6{
+    width: 7.1rem;
+    height: 4.48rem;
+    position: absolute;
+    bottom: 0.2rem;
+    left: -0.7rem;
+}
+.downImg1-6{
+    animation-name: fadeInUp,bounceOut;
+    animation-duration: 1s,1s;
+    animation-delay: 2s,3s;
+    animation-timing-function: ease-out,ease-in;
+}
+.downImg2-6{
+    animation-name: fadeInLeft,fadeOutDown;
+    animation-duration: 1s,1s;
+    animation-delay: 4s,5s;
+    animation-timing-function: ease-out,ease-in;
+}
+@keyframes bounceInRight1 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(3000px, 0, 0);
+      transform: translate3d(3000px, 0, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(-25px, 0, 0);
+      transform: translate3d(-25px, 0, 0);
+    }
+  
+    75% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(-5px, 0, 0);
+      transform: translate3d(-5px, 0, 0);
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  @keyframes bounceOutUp1 {
+      0%{
+          opacity: 1;
+      }
+    20% {
+      -webkit-transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    40%,
+    45% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 20px, 0);
+      transform: translate3d(0, 20px, 0);
+    }
+  
+    to {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -2000px, 0);
+      transform: translate3d(0, -2000px, 0);
+    }
+  }
+.downImg3-6{
+    animation-name: bounceInRight1,bounceOutUp1;
+    animation-duration: 1s,1s;
+    animation-delay: 6s,7s;
+    animation-timing-function: ease-out,ease-in;
+}
+@keyframes zoomOut1 {
+    from {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(1.5, 1.5, 1.5);
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes flipInX1 {
+    from {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 1;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      
+    }
+  
+    80% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+  
+    to {
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+      opacity: 1;
+    }
+  }
+.downImg5-6{
+    animation-name: flipInX1,zoomOut1;
+    animation-duration: 1s,1s;
+    animation-delay: 9.5s,10.5s;
+    animation-timing-function: ease-out,ease-out;
+}
+.downImg6-6{
+    animation-name: rotateInDownRight,zoomOut;
+    animation-duration: 1s,1s;
+    animation-delay: 11s,12s;
+    animation-timing-function: ease-out,ease-out;
+}
+.drightimg-6{
+    width: 2.79rem;
+    height: 4.48em;
+    position: absolute;
+    bottom: 0.2rem;
+    right: -0.1rem;
+    opacity: 0;
+    animation-name: fadeInRight,fadeOutLeft;
+    animation-duration: 1s,1s;
+    animation-delay: 8s,9s;
+    animation-timing-function: ease-in,ease-in;
+}
+.drightimg2-6{
+    width: 2.79rem;
+    height: 4.48em;
+    position: absolute;
+    bottom: 0.2rem;
+    right: -0.1rem;
+}
+.dleftimg-6{
+    width: 3.85rem;
+    height: 4.48em;
+    position: absolute;
+    bottom: 0.2rem;
+    left: -0.1rem;
+    opacity: 0;
+    animation-name: fadeInLeft,fadeOutLeft;
+    animation-duration: 1s,1s;
+    animation-delay: 8s,9s;
+    animation-timing-function: ease-in,ease-in;
+}
+.dleftimg2-6{
+    width: 3.85rem;
+    height: 4.48em;
+    position: absolute;
+    bottom: 0.2rem;
+    left: -0.1rem;
+}
+/* 第六页结束 */
+/* 第七页同第六页 */
+
+/* 第七页结束 */
+/* 第八页开始 */
+
+/* 第八页结束 */
+/* 第九页开始 */
+.big-9{
+    width: 7.69rem;
+    height: 10.94rem;
+    position: absolute;
+    left: -0.7rem;
+    animation: bounceOut 1s linear forwards;
+    z-index: 10;
+}
+.white-9{
+    width: 5.6rem;
+    height:100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -2.8rem;
+    z-index:0;
+    animation: fadeInUp 0.7s ease-out ;
+}
+.yellowtop-9{
+    width: 2.83rem;
+    height: 2.9rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.41rem;
+    z-index: 2;
+    /* animation: fadeInDown 0.7s ease-out ; */
+    animation-name: fadeInDown,fadeOutUp;
+    animation-duration: 1s,1s;
+    animation-delay: 0s,4.5s;
+    animation-timing-function: ease-in,ease-out;
+    animation-fill-mode:forwards,forwards;
+}
+.topsj-9{
+    width: 2.83rem;
+    height: 1.76rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.41rem;
+    top: 1.14rem;
+    z-index: 3;
+    animation: fadeOut 0.5s 5s linear forwards;
+}
+.word1-9{
+    width: 1.8rem;
+    height: 0.6rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 50%;
+    margin-left: -0.9rem;
+    animation: fadeOutLeft 0.5s 2s linear forwards;
+    
+}
+@keyframes slideInLeft1 {
+    from {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+      opacity: 0;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+.word2-9{
+    width: 3.74rem;
+    height: 0.4rem;
+    position: absolute;
+    top: 4.3rem;
+    left: 50%;
+    margin-left: -1.86rem;
+    opacity: 0;
+    animation-name: slideInLeft1,fadeOutLeft;
+    animation-duration: 1s,1s;
+    animation-delay: 0.5s,2.5s;
+    animation-timing-function: ease-in-out,ease-out;
+    animation-fill-mode:forwards,forwards;
+}
+@keyframes flipInY1 {
+    from {
+      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+      transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity:0;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+      transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 1;
+    }
+  
+    60% {
+      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+      transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+      opacity: 1;
+    }
+  
+    80% {
+      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+      transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+  
+    to {
+     opacity: 1;
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+    }
+  }
+.word3-9{
+    width: 3.74rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 4.99rem;
+    left: 50%;
+    margin-left: -1.86rem;
+    opacity: 0;
+    animation-name: flipInY1,fadeOutLeft;
+    animation-duration: 1s,1s;
+    animation-delay: 1s,3.5s;
+    animation-timing-function: ease-in,ease-out;
+    animation-fill-mode:forwards,forwards;
+}
+.word4-9{
+    width: 3rem;
+    height: 0.62rem;
+    position: absolute;
+    top: 5.7rem;
+    left: 50%;
+    margin-left: -1.5rem;
+    animation-name: flash,fadeOutLeft;
+    animation-duration: 1s,1s;
+    animation-delay: 1s,5.5s;
+    animation-timing-function: ease-in,linear;
+    animation-fill-mode:forwards,forwards;
+}
+.yellowdown-9{
+    width: 2.83rem;
+    height: 4.29rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.41rem;
+    animation: fadeInUp 0.7s ease-out ;
+    animation-name: fadeInUp,fadeOutDown;
+    animation-duration: 1s,1s;
+    animation-delay: 0s,4s;
+    animation-timing-function: ease-in,ease-out;
+    animation-fill-mode:forwards,forwards;
+}
+.downsj-9{
+    width: 2.83rem;
+    height: 1.76rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.41rem;
+    bottom: 2.55rem;
+    z-index: 3;
+    animation: fadeOut 0.5s 5s linear forwards;
+}
+.xiexian-9{
+    width: 2.83rem;
+    height: 0.87rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.41rem;
+    bottom: 1.1rem;
+}
+.boxani{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0;
+    animation: fadeIn 1s 6s linear forwards;
+    z-index: 2;
+}
+@keyframes bounceInUp2 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 3000px, 0);
+      transform: translate3d(0, 3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, -20px, 0);
+      transform: translate3d(0, -20px, 0);
+    }
+  
+    75% {
+      -webkit-transform: translate3d(0, 10px, 0);
+      transform: translate3d(0, 10px, 0);
+      opacity: 1;
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0, -5px, 0);
+      transform: translate3d(0, -5px, 0);
+      opacity: 1;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+.lastbig1-9{
+    width: 7.69rem;
+    height: 10.94rem;
+    position: absolute;
+    left: -0.7rem;
+    opacity: 0;
+    animation-name: bounceInUp2,fadeOutDown;
+    animation-duration: 1s,1s;
+    animation-delay: 6.5s,8s;
+    animation-timing-function: ease-in,ease-out;
+    animation-fill-mode:forwards,forwards;
+    z-index: 10;
+}
+@keyframes bounceInRight2 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(3000px, 0, 0);
+      transform: translate3d(3000px, 0, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(-25px, 0, 0);
+      transform: translate3d(-25px, 0, 0);
+    }
+  
+    75% {
+        opacity: 1;
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  
+    90% {
+        opacity: 1;
+      -webkit-transform: translate3d(-5px, 0, 0);
+      transform: translate3d(-5px, 0, 0);
+    }
+  
+    to {
+        opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+.lastbig2-9{
+    width: 7.69rem;
+    height: 10.94rem;
+    position: absolute;
+    left: -0.7rem;
+    opacity: 0;
+    top: 0;
+    animation: bounceInRight2 1s 8.5s forwards;
+    z-index: 11;
+}
+/* 第九页结束 */
+/* 第十页开始 */
+.box10>img{
+    z-index: 2;
+}
+.box10>.white-10{
+    width: 100%;
+    height: 3.66rem;
+    position: absolute;
+    top:0.3rem;
+    z-index: 1;
+}
+.yellowleft-10{
+    width: 1.76rem;
+    height: 1.64rem;
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    /* animation: fadeInLeft 1s linear; */
+}
+.xiexianleft-10{
+    width: 0.5rem;
+    height: 1.64rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 0.15rem;
+}
+.sjleft-10{
+    width: 1rem;
+    height: 1.64rem;
+    position: absolute;
+    top:1.5rem;
+    left: 0.8rem;
+}
+.yellowright-10{
+    width: 1.76rem;
+    height: 1.64rem;
+    position: absolute;
+    right: 0;
+    top: 1.5rem;
+    /* animation: fadeInRight 1s linear; */
+}
+.xiexianright-10{
+    width: 0.5rem;
+    height: 1.64rem;
+    position: absolute;
+    top: 1.5rem;
+    right:0;
+}
+.sjright-10{
+    width: 1rem;
+    height: 1.64rem;
+    position: absolute;
+    top:1.5rem;
+    right: 0.8rem;
+}
+.word1-10{
+    width: 1.48rem;
+    height: 0.49rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+    margin-left: -0.74rem;
+}
+.word2-10{
+    width: 2.2rem;
+    height: 0.27rem;
+    position: absolute;
+    top: 2.05rem;
+    left: 50%;
+    margin-left: -1.1rem;
+}
+.word3-10{
+    width: 2.2rem;
+    height: 0.34rem;
+    position: absolute;
+    top: 2.4rem;
+    left: 50%;
+    margin-left: -1.1rem;
+}
+.word4-10{
+    width: 1.28rem;
+    height: 0.42rem;
+    position: absolute;
+    top: 2.75rem;
+    left: 50%;
+    margin-left: -0.64rem;
+}
+.box10>.midimg-10{
+    width: 6.4rem;
+    height: 1.86rem;
+    position: absolute;
+    top: 2.65rem;
+    z-index:0;
+}
+.downimg1-10{
+    width:3.1rem;
+    height: 2.24rem;
+    position: absolute;
+    bottom: 3.8rem;
+}
+.downimg2-10{
+    width:3.1rem;
+    height: 2.24rem;
+    position: absolute;
+    bottom: 3.8rem;
+    right: 0;
+}
+.downimg3-10{
+    width:3.1rem;
+    height: 2.24rem;
+    position: absolute;
+    bottom: 1.1rem;
+}
+.downimg4-10{
+    width:3.1rem;
+    height: 2.24rem;
+    position: absolute;
+    bottom: 1.1rem;
+    right: 0;
+}
+.downbigimg-10{
+    width: 100%;
+    height: 5.8rem;
+    position: absolute;
+    bottom: 0.45rem;
+}
+/* 第十页结束 */
+/* 第十一页上半部分同第十页上半部分 */
+.downbigimg-11{
+    width: 100%;
+    height: 4.6rem;
+    position: absolute;
+    bottom: 1.45rem;
+    opacity: 0;
+    animation-name: zoomInn,fadeOutDown;
+    animation-duration: 1s,1s;
+    animation-delay: 4.5s,6.5s;
+    animation-timing-function: linear,linear;
+    animation-fill-mode:forwards,forwards;
+}
+.downimg1-11{
+    width: 100%;
+    height: 2.84rem;
+    position: absolute;
+    bottom: 3.45rem;
+}
+.downimg2-11{
+    width: 2.96rem;
+    height: 2.2rem;
+    position: absolute;
+    bottom: 0.9rem;
+    left: 0.1rem;
+}
+.downimg3-11{
+    width: 2.96rem;
+    height: 2.2rem;
+    position: absolute;
+    bottom: 0.9rem;
+    right: 0.1rem;
+}
+/* 第十一页结束 */
+/* 第十二页上半部分同第十页上半部分 */
+.word4-12{
+    height: 0.32rem;
+}
+.downimg-12{
+    width:7.82rem;
+    left: -0.4rem;
+    height: 5.75rem;
+    position: absolute;
+    bottom: 1.1rem;
+}
+/* 第十二页结束 */
