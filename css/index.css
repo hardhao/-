@@ -1888,7 +1888,805 @@ height: 100%;
 /* 第十五页结束 */
 /* 第十六页开始 */
 .box16{
-    height: 92%;
-    margin-top: -0.01rem;
+    height: 10.4rem;
+    margin-top: -0.001rem;
+}
+.big-16{
+    width: 7.82rem;
+    height: 10.88rem;
+    z-index: 0;
+    top: -0.11rem;
+    right: -0.61rem;
+}
+.border-16{
+    width: 6rem;
+    height: 8.5rem;
+    left: 50%;
+    margin-left: -3rem;
+    top:1.18rem;
+    opacity: 0;
+    animation: zoomInn 1s linear forwards;
+}
+.word1-16{
+    width: 2.98rem;
+    height: 0.36rem;
+    top: 1.38rem;
+    left:0.42rem;
+}
+.mocha-16{
+    width: 1.15rem;
+    height: 2.28rem;
+    left: 0.42rem;
+    top: 1.96rem;
+}
+.word2-16{
+    width: 0.2rem;
+    height: 1.72rem;
+    top: 2.18rem;
+    left: 1.85rem;
+    animation: flash 1s 3s linear;
+}
+.word3-16{
+    width: 0.22rem;
+    height: 0.28rem;
+    top: 2.02rem;
+    left: 1.72rem;
+}
+.word4-16{
+    width: 0.24rem;
+    height: 0.26rem;
+    top: 3.93rem;
+    left: 1.94rem;
+}
+.xilie-16{
+    width: 1.29rem;
+    height: 2.36rem;
+    left: 2.16rem;
+    top: 1.96rem;
+}
+.xiexian1-16{
+    width: 0.83rem;
+    height: 1rem;
+    top: 2.09rem;
+    left: 0.91rem;
+    opacity: 0;
+    animation: zoomInn 1s 10.5s linear forwards;
+}
+.xiexian2-16{
+    width: 0.8rem;
+    height: 1rem;
+    top: 3.34rem;
+    left: 0.88rem;
+    opacity: 0;
+    animation: zoomInn 1s 10.5s linear forwards;
+}
+.xiexian3-16{
+    width: 0.83rem;
+    height: 1rem;
+    top: 2.12rem;
+    left: 2.64rem;
+    opacity: 0;
+    animation: zoomInn 1s 10.5s linear forwards;
+}
+.xiexian4-16{
+    width: 0.83rem;
+    height: 1rem;
+    top: 3.3rem;
+    left: 2.62rem;
+    opacity: 0;
+    animation: zoomInn 1s 10.5s linear forwards;
+}
+.shuye-16{
+    width: 0.32rem;
+    height: 0.4rem;
+    top: 3.77rem;
+    left: 1.25rem;
+}
+.circle1-16{
+    width: 0.5rem;
+    height: 0.46rem;
+    top: 2.66rem;
+    left: 1.06rem;
+    animation: flash 1s 2s linear infinite;
+}
+.circle2-16{
+    width: 0.34rem;
+    height: 0.32rem;
+    top: 3.86rem;
+    left: 3.24rem;
+    animation: flash 1s 2s linear infinite;
+}
+.word5-16{
+    width: 0.45rem;
+    height: 0.54rem;
+    left: 2.78rem;
+    top: 2.52rem;
+}
+.word6-16{
+    width: 0.97rem;
+    height: 0.18rem;
+    top: 4.46rem;
+    left:0.8rem;
+}
+.word7-16{
+    width: 0.57rem;
+    height: 3.12rem;
+    left: 0.78rem;
+    top: 4.78rem;
+}
+.word8-16{
+    width: 0.09rem;
+    height: 3.02rem;
+    top: 4.76rem;
+    left: 1.38rem;
+}
+.word9-16{
+    width: 0.17rem;
+    height: 3.15rem;
+    top: 4.76rem;
+    left: 1.52rem;
+}
+.bgdown-16{
+    width: 5.84rem;
+    height: 1.88rem;
+    top: 5.65rem;
+    z-index: -1;
+    right: -0.06rem;
+}
+.cup-16{
+    width: 1.11rem;
+    height: 1.16rem;
+    bottom: 1.16rem;
+    left: 0.24rem;
+}
+.green-16{
+    width: 3.5rem;
+    height: 0.37rem;
+    bottom: 0.81rem;
+    left: -0.01rem;
+    opacity: 0;
+    animation-name: fadeInLeft,flash;
+    animation-duration: 2s,1s;
+    animation-delay: 6.5s,9s;
+    animation-timing-function: linear,linear;
+    animation-fill-mode:forwards,forwards;
+    animation-iteration-count:1,3;
+}
+.word10-16{
+    width: 2.72rem;
+    height: 0.14rem;
+    bottom: 0.92rem;
+    left: 0.34rem;
 }
 /* 第十六页结束 */
+/* 第十七页开始 */
+.black-17{
+    width: 7.48rem;
+    height: 10.4rem;
+    /* animation: bounce 1s 3s linear; */
+    animation-duration: 2s;
+}
+@keyframes zoomOut17 {
+    from {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+      -webkit-transform: scale3d(1.3, 1.3, 1.3);
+      transform: scale3d(1.3, 1.3, 1.3);
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes slideInRight17 {
+    from {
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      opacity: 1;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+.big-17{
+    width: 7.14rem;
+    height: 9.92rem;
+    left: -0.5rem;
+    top: 0.35rem;
+    opacity: 0;
+    animation-name: slideInRight17,zoomOut17;
+    animation-duration: 1s,1s;
+    animation-delay: 3s,8s;
+    animation-timing-function: ease-out,linear;
+    animation-fill-mode:forwards,forwards;
+    z-index: 0;
+}
+.logo-17{
+    width: 1.66rem;
+    height: 1.22rem;
+    top:4.97rem;
+    right: 0.9rem;
+    opacity: 0;
+    animation-name: slideInRight17,zoomOut17;
+    animation-duration: 1s,1s;
+    animation-delay: 3s,8s;
+    animation-timing-function: ease-in-out,linear;
+    animation-fill-mode:forwards,forwards;
+    z-index: 1;
+}
+.word1-17{
+    width: 0.9rem;
+    height: 0.96rem;
+    left: 0.3rem;
+    top: 2.7rem;
+    opacity: 0;
+    z-index: 5;
+    animation-name: fadeInLeft,fadeOutLeft;
+    animation-duration: 1s,1s;
+    animation-delay: 1s,6.5s;
+    animation-timing-function: linear,linear;
+    animation-fill-mode:forwards,forwards;
+}
+@keyframes bounceOutUp17 {
+    0%{
+        opacity: 1;
+    }
+    20% {
+      -webkit-transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -10px, 0);
+      opacity: 1;
+    }
+  
+    40%,
+    45% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 20px, 0);
+      transform: translate3d(0, 20px, 0);
+    }
+  
+    to {
+      opacity:0;
+      -webkit-transform: translate3d(0, -2000px, 0);
+      transform: translate3d(0, -2000px, 0);
+    }
+  }
+.word2-17{
+    width: 2.81rem;
+    height: 3.54rem;
+    top: 0.7rem;
+    z-index: 5;
+    left: 0.2rem;
+    opacity: 0;
+    animation-name: fadeInDown,bounceOutUp17;
+    animation-duration: 1s,1s;
+    animation-delay: 0s,5.5s;
+    animation-timing-function: linear,linear;
+    animation-fill-mode:forwards,forwards;
+}
+.tubiao-17{
+    width: 0.44rem;
+    height: 0.58rem;
+    top: 3.74rem;
+    left: 2.52rem;
+    opacity: 0;
+    animation-name: fadeIn,fadeOut;
+    animation-duration: 1s,1s;
+    animation-delay: 2s,7s;
+    animation-timing-function: linear,linear;
+    animation-fill-mode:forwards,forwards;
+}
+.songchuan-17{
+    display: flex;
+    margin-top:0.89rem;
+    margin-left:0.48rem;
+    z-index: 2;
+}
+.songchuan-17>span{
+    color: #fff;
+    font-size: 0.4rem;
+    z-index: 2;
+}
+.songzhi-17{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.07rem;
+    margin-left: 0.88rem;
+    z-index: 2;
+}
+.songzhi-17>div{
+    display: flex;
+    margin-top: 0.05rem;
+}
+.songzhi-17>div>span{
+    color: #fff;
+    font-size: 0.28rem;
+    z-index: 2;
+}
+@keyframes bounceInLeft17 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 1;
+      -webkit-transform: translate3d(-3000px, 0, 0);
+      transform: translate3d(-3000px, 0, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(25px, 0, 0);
+      transform: translate3d(25px, 0, 0);
+    }
+  
+    75% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+      opacity: 1;
+    }
+  
+    90% {
+      -webkit-transform: translate3d(5px, 0, 0);
+      transform: translate3d(5px, 0, 0);
+      opacity: 1;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+.yi>span:nth-child(1){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.7s,10s,11.5s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.yi>span:nth-child(2){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.7s,10s,11.6s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.yi>span:nth-child(3){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.7s,10s,11.7s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.yi>span:nth-child(4){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.7s,10s,11.8s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.yi>span:nth-child(5){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.7s,10s,11.9s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.yi>span:nth-child(6){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.7s,10s,12s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.yi>span:nth-child(7){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.7s,10s,12.1s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+
+.er>span:nth-child(1){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.8s,10s,12.2s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.er>span:nth-child(2){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.8s,10s,12.3s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.er>span:nth-child(3){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.8s,10s,12.4s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.er>span:nth-child(4){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.8s,10s,12.5s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.er>span:nth-child(5){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.8s,10s,12.6s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.er>span:nth-child(6){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.8s,10s,12.7s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.er>span:nth-child(7){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.8s,10s,12.8s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+
+.san>span:nth-child(1){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.9s,10s,12.9s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.san>span:nth-child(2){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.9s,10s,13s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.san>span:nth-child(3){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.9s,10s,13.1s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.san>span:nth-child(4){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.9s,10s,13.2s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.san>span:nth-child(5){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.9s,10s,13.3s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.san>span:nth-child(6){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.9s,10s,13.4s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.san>span:nth-child(7){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 7.9s,10s,13.5s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+
+.si>span:nth-child(1){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8s,10s,13.6s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.si>span:nth-child(2){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8s,10s,13.7s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.si>span:nth-child(3){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8s,10s,13.8s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.si>span:nth-child(4){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8s,10s,13.9s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.si>span:nth-child(5){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8s,10s,14s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.si>span:nth-child(6){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8s,10s,14.1s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.si>span:nth-child(7){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8s,10s,14.2s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+
+.wu>span:nth-child(1){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.1s,10s,14.3s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.wu>span:nth-child(2){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.1s,10s,14.4s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.wu>span:nth-child(3){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.1s,10s,14.5s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.wu>span:nth-child(4){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.1s,10s,14.6s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.wu>span:nth-child(5){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.1s,10s,14.7s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.wu>span:nth-child(6){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.1s,10s,14.8s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.wu>span:nth-child(7){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.1s,10s,14.9s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+
+.liu>span:nth-child(1){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.2s,10s,15s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.liu>span:nth-child(2){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.2s,10s,15.1s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.liu>span:nth-child(3){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.2s,10s,15.2s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.liu>span:nth-child(4){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.2s,10s,15.3s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.liu>span:nth-child(5){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.2s,10s,15.4s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.liu>span:nth-child(6){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.2s,10s,15.5s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.liu>span:nth-child(7){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.2s,10s,15.6s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+
+.qi>span:nth-child(1){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.3s,10s,15.7s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.qi>span:nth-child(2){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.3s,10s,15.8s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.qi>span:nth-child(3){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.3s,10s,15.9s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.qi>span:nth-child(4){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.3s,10s,16s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.qi>span:nth-child(5){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.3s,10s,16.1s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.qi>span:nth-child(6){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.3s,10s,16.2s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.qi>span:nth-child(7){
+    opacity: 0;
+    animation-name:flipInX,fadeOut,bounceInLeft17;
+    animation-duration: 1s,0.1s,1s;
+    animation-delay: 8.3s,10s,16.3s;
+    animation-timing-function: linear,linear,linear;
+    animation-fill-mode:forwards,forwards,forwards;
+}
+.meiright-17{
+    width: 1.82rem;
+    height: 2.46rem;
+    right: 0rem;
+    top: 0.4rem;
+    opacity: 0;
+    animation-name: fadeIn,tada;
+    animation-duration: 0.1s,1s;
+    animation-delay: 9s,9.1s;
+    animation-timing-function: linear,linear;
+    animation-fill-mode:forwards,forwards;
+    animation-iteration-count:1,3;
+}
+.meileft-17{
+    width: 1.64rem;
+    height: 2.76rem;
+    left: 0;
+    bottom: 1.84rem;
+    opacity: 0;
+    animation-name: fadeIn,flash;
+    animation-duration: 0.1s,1s;
+    animation-delay: 9s,9.1s;
+    animation-timing-function: linear,linear;
+    animation-fill-mode:forwards,forwards;
+    animation-iteration-count:1,3;
+}
+.milktop-17{
+    width: 6.18rem;
+    height: 5.2rem;
+    right:-1.1rem;
+    top:1.6rem;
+    z-index: 1;
+    opacity: 0;
+}
+.milkdown-17{
+    width: 4.42rem;
+    height: 10.6rem;
+    right: -0.15rem;
+    bottom:-5.85rem;
+    z-index: 0;
+    opacity: 0;
+}
+/* 第十七页结束 */
