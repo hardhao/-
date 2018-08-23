@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<div class="swiper-container">
+<div class="swiper-container swiper-container-h">
     <div class="swiper-wrapper">
         <!-- 第一页 -->
         <div class="swiper-slide">
@@ -636,16 +636,15 @@
         </div>
         <!-- 第二十二页 -->
         <div class="swiper-slide">
-            <div class="box box22">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
-                        <div class="swiper-slide">Slide 5</div>
-                    </div>
+            <div class="swiper-container swiper-container-v">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="lunboimg1-22" src="./images/1.jpg" alt=""> </div>
+                    <div class="swiper-slide"><img class="lunboimg2-22" src="./images/2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="lunboimg3-22" src="./images/3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="lunboimg4-22" src="./images/4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="lunboimg5-22" src="./images/5.jpg" alt=""></div>
                 </div>
+                <div class="swiper-pagination swiper-pagination-v"></div>
             </div>
         </div>
     </div>
@@ -655,18 +654,14 @@
 <script src="./js/swiper.min.js"></script>
 <script> 
 
-var swiper1 = new Swiper('.box22 .swiper-container', {
+var swiperV = new Swiper('.swiper-container-v', {
       slidesPerView: 1,
       spaceBetween: 0,
       loop: true,
       pagination: {
-        el: '.box22 .swiper-container',
+        el: '.swiper-pagination-v',
         clickable: true,
-      },
-      autoplay: {
-        delay: 500,
-        disableOnInteraction: false,
-      },
+      }
     });
 
 
@@ -687,7 +682,7 @@ for (var i=0; i<scales.length; i++) {
 }
 
 		  
-  var mySwiper = new Swiper ('.swiper-container', {
+  var mySwiperH = new Swiper ('.swiper-container-h', {
    direction : 'vertical',
    mousewheelControl : true,
    loop:true,
@@ -697,7 +692,8 @@ for (var i=0; i<scales.length; i++) {
 	  },
    onSlideChangeEnd: function(swiper){
 	swiperAnimate(swiper);
-    }	  
+    },
+    
 	   })         
   </script>
 </body>
