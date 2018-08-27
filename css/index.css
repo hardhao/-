@@ -980,6 +980,10 @@ background-color: #f0f0f0;
     animation-timing-function: ease-out,ease-out;
     animation-fill-mode:forwards,forwards;
 }
+.swiper-container-x{
+    opacity: 0;
+    animation: fadeInUp 0.5s 16s linear forwards;
+}
 /* 第八页结束 */
 /* 第九页开始 */
 .big-9{
@@ -3508,14 +3512,163 @@ background-color: #f0f0f0;
 }
 /* 第二十一页结束 */
 /* 第二十二页开始 */
-.box22{
-    height: 10.1rem;
+.bg-22{
+    width: 2.07rem;
+    height: 3.48rem;
+    top: 1.17rem;
+    left:0.2rem;
+    z-index: 5;
+    position: absolute;
+}
+@keyframes fadeIn22 {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 0.5;
+    }
+  }
+.black-22{
+    width: 2.04rem;
+    height: 3.4rem;
+    top: 1.19rem;
+    left:0.22rem;
+    z-index: 4;
+    position: absolute;
+    opacity: 0;
+    display: none;
+    background-color: #000;
+    animation: fadeIn22 0.5s linear forwards;
+    animation-delay:3s;
+}
+.word1-22{
+    width: 1.64rem;
+    height: 2.63rem;
+    z-index: 5;
+    left: 0.4rem;
+    top: 1.37rem;
+}
+.heng1-22{
+    width: 0.74rem;
+    height: 0.04rem;
+    top: 3.2rem;
+    left: 1.3rem;
+    z-index: 5;
+}
+.word2-22{
+    width: 1.57rem;
+    height: 1.11rem;
+    top: 3.31rem;
+    left: 0.5rem;
+    z-index: 5;
+    /* opacity: 0;
+    animation: fadeIn24 0.5s 2s linear forwards; */
+}
+.heng2-22{
+    width: 0.74rem;
+    height: 0.04rem;
+    top: 4.42rem;
+    left: 1.3rem;
+    z-index: 5;
+}
+.heng3-22{
+    width: 1.56rem;
+    height: 0.06rem;
+    left: 0.7rem;
+    bottom: 3.1rem;
+    z-index: 5;
+}
+.swiper-slide-active>.new-22,.swiper-slide-active>.black-22,.swiper-slide-active>.word4-22,.swiper-slide-active>.word5-22{
+    display: block;
+}
+.new-22{
+    display: none;
+    width: 1.56rem;
+    height: 0.69rem;
+    left: 0.69rem;
+    bottom: 2.4rem;
+    z-index: 5;
+    opacity: 0;
+    animation: fadeIn24 0.5s linear forwards;
+    animation-delay:4s;
+}
+
+.word3-22{
+    width: 1.52rem;
+    height: 0.48rem;
+    left:0.69rem;
+    bottom: 1.9rem;
+    z-index: 5;
+}
+.word4-22{
+    width: 1.5rem;
+    height: 0.37rem;
+    left: 0.69rem;
+    bottom: 1.5rem;
+    z-index: 5;
+    opacity: 0;
+    animation: fadeIn24 0.5s linear forwards;
+    animation-delay:5s;
+    display: none;
+}
+.heng4-22{
+    width: 1.51rem;
+    height: 0.04rem;
+    left: 0.7rem;
+    bottom: 1.43rem;
+    z-index: 5;
+}
+.word5-22{
+    width: 1.42rem;
+    height: 0.2rem;
+    left: 0.69rem;
+    bottom: 1.2rem;
+    z-index: 5;
+    opacity: 0;
+    animation: fadeInUp 0.5s linear forwards;
+    animation-delay:6.5s;
+    display: none;
+}
+@keyframes flash222 {
+    from,
+    50%,
+    to {
+      opacity: 0.4;
+    }
+  
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+.blue{
+    width: 2rem;
+    height: 2.22rem;
+    position: absolute;
+    background-color: rgb(89, 199, 249);
+    z-index: 4;
+    left: 0.4rem;
+    bottom: 1.1rem;
+    opacity: 0;
+    animation-name: fadeIn22,flash222;
+    animation-duration: 0.5s,1s;
+    animation-delay: 8s,9.5s;
+    animation-timing-function: linear,linear;
+    animation-fill-mode:forwards,forwards;
+    animation-iteration-count:1,infinite;
+}
+.swiper-container-v{
+    /* overflow: visible; */
+    width:100%;
+    height: 12rem;
+    position: absolute;
 }
 .lunboimg1-22,.lunboimg2-22,.lunboimg3-22,.lunboimg4-22,.lunboimg5-22{
     z-index: 3;
-    width: 6.4rem;
-    height: 11rem;
-    top: -1rem;
+    width:6.4rem;
+    height: 10.2rem;
+    top: 1.15rem;
 }
 /* 第二十二页结束 */
 /* 第二十三页开始 */
