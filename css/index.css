@@ -54,6 +54,9 @@ background-color: #f0f0f0;
 .swiper-slide-active>.box{
     display: block;
 }
+/* .swiper-slide-active{
+    display: block;
+} */
 .bg{
     width:8.69rem;
     height: 7.33rem;
@@ -858,10 +861,125 @@ background-color: #f0f0f0;
 }
 /* 第六页结束 */
 /* 第七页同第六页 */
-
+.midword3-7{
+    width: 3.7rem;
+    height: 0.51rem;
+    top: 4.17rem;
+    left: 0.47rem;
+}
+.downImgsecond-7{
+    width: 6.79rem;
+    height: 4.9rem;
+    left: -0.12rem;
+    bottom: 0.15rem;
+}
 /* 第七页结束 */
 /* 第八页开始 */
+.midword3-8{
+    left: 0.48rem;
+    top:4.18rem;
+}
+.zhebox1-8{
+    width:6.44rem;
+    height: 4.89em;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+    animation: fadeIn24 0.5s 3s linear forwards;
+}
+.zhebox2-8{
+    width:6.44rem;
+    height: 4.89em;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: 3;
+    animation: fadeIn24 0.5s 5.5s linear forwards;
+}
+.zhebox3-8{
+    width:6.44rem;
+    height: 4.89em;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: 3;
+    animation: fadeIn24 0.5s 8s linear forwards;
+}
+.zhebox4-8{
+    width:6.44rem;
+    height: 4.89em;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: 3;
+    animation: fadeIn24 0.5s 10.5s linear forwards;
+}
+.zhebox5-8{
+    width:6.44rem;
+    height: 4.89em;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: 3;
+    animation: fadeIn24 0.5s 13s linear forwards;
+}
+.zhe-8{
+    width: 0.64rem;
+    height: 4.89rem;
+    left:0;
+    bottom: 0;
+}
+.zhe1-2{
+    left:0.64rem;
+}
+.zhe1-3{
+    left:1.28rem;
+}
+.zhe1-4{
+    left:1.92rem;
+}
 
+.zhe1-5{
+    left:2.56rem;
+}
+.zhe1-6{
+    left:3.2rem;
+}
+.zhe1-7{
+    left:3.84rem;
+}
+.zhe1-8{
+    left:4.48rem;
+}
+.zhe1-9{
+    left:5.12rem;
+}
+.zhe1-10{
+    left:5.76rem;
+}
+.swiperding{
+    position: absolute;
+    height: 5.8rem;
+    width:7.5rem;
+    left:0rem;
+}
+.shouji-8{
+    height:4.89rem;
+    width:6.4rem;
+    bottom:0;
+    opacity: 0;
+    animation-name: flipInY,rotateOutUpRight;
+    animation-duration: 1s,1s;
+    animation-delay:15.5s,18s;
+    animation-timing-function: ease-out,ease-out;
+    animation-fill-mode:forwards,forwards;
+}
 /* 第八页结束 */
 /* 第九页开始 */
 .big-9{
