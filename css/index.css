@@ -986,6 +986,9 @@ background-color: #f0f0f0;
 }
 /* 第八页结束 */
 /* 第九页开始 */
+.box9{
+    height: 11.65rem;
+}
 .big-9{
     width: 7.69rem;
     height: 10.94rem;
@@ -1163,7 +1166,7 @@ background-color: #f0f0f0;
     height: 100%;
     background-color: #fff;
     opacity: 0;
-    animation: fadeIn 1s 6s linear forwards;
+    animation: fadeIn24 1s 6s linear forwards;
     z-index: 2;
 }
 @keyframes bounceInUp2 {
@@ -1208,10 +1211,11 @@ background-color: #f0f0f0;
   }
 .lastbig1-9{
     width: 7.69rem;
-    height: 10.94rem;
+    height: 10.95rem;
     position: absolute;
     left: -0.7rem;
     opacity: 0;
+    top: -0.2rem;
     animation-name: bounceInUp2,fadeOutDown;
     animation-duration: 1s,1s;
     animation-delay: 6.5s,8s;
@@ -1261,9 +1265,10 @@ background-color: #f0f0f0;
   }
 .lastbig2-9{
     width: 7.69rem;
-    height: 10.94rem;
+    height: 10.95rem;
+    top: -0.2rem;
     position: absolute;
-    left: -0.7rem;
+    left: -0.6rem;
     opacity: 0;
     top: 0;
     animation: bounceInRight2 1s 8.5s forwards;
